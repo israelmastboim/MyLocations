@@ -1,0 +1,22 @@
+<mat-toolbar color="primary">
+    <ng-container *ngIf="toolbarObject">
+      <div class="title">
+        <span>{{toolbarObject?.title}}</span>
+      </div>
+      
+      <ng-container *ngFor="let action of toolbarObject.actions">
+        <a class="action" [routerLink]="[action.link]">
+      
+          <span>{{action.title}}</span>
+          <mat-icon class="white-icon">{{action.icon}}</mat-icon>
+         
+        </a>
+      </ng-container>
+      
+    </ng-container>
+    
+  </mat-toolbar>
+<div class="main-content">
+    <router-outlet></router-outlet>
+</div>
+

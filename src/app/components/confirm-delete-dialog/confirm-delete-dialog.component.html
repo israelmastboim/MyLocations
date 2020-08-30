@@ -1,0 +1,7 @@
+<div mat-dialog-content>
+  <p>Are you sure you want to delete {{data.category.name}} category?</p>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button (click)="onCancel()">Cancel</button>
+  <button mat-raised-button color="primary"  [mat-dialog-close]="data.category.id"  cdkFocusInitial>Ok</button>
+</div>

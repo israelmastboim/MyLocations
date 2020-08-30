@@ -1,0 +1,27 @@
+.main-content {
+    margin: 10px 10px 0 10px;
+}
+.white-icon {
+    color: white;
+}
+.title {
+ margin: 0 20px 0 0;
+}
+
+a {
+    display: flex;
+    padding: 0 10px;
+    border-left: 1px white solid;
+    border-right: 1px white solid;
+    height: 100%;
+    text-decoration: none;
+    color:white;
+    span {
+        font-size: 16px;
+        margin: auto 5px;
+    }
+    mat-icon {
+        margin: auto 5px;
+    }
+    
+}

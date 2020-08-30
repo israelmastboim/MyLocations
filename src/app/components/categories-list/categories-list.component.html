@@ -1,0 +1,10 @@
+<div class="category-list">
+    <div  class="card" *ngFor="let category of categories | async;trackBy: trackByFn">
+        <mat-card mat-ripple (click)="onSelectCategory(category.id)" [ngClass]="{'highlight': selectedCategory == category.id}">
+            <div>{{category.name | titlecase}}</div>
+        </mat-card>
+    </div>
+   
+
+</div>
+

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "mylocation-23e69": {
+      "hosting": {
+        "myLocations": [
+          "mylocation-23e69"
+        ]
+      }
+    }
+  }
+}

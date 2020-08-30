@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ManageToolbarService } from './services/manage-toolbar.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'myLocations';
+  constructor(private toolbarService: ManageToolbarService) {
+
+  }
 }

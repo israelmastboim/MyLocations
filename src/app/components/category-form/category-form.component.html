@@ -1,0 +1,18 @@
+<div class="form-container">
+  <mat-card >
+    <h2>Categoty Form</h2>
+    <form [formGroup]="categoryForm" (ngSubmit)="onSubmit()">
+      <mat-form-field  appearance="outline">
+        <mat-label>Category Name</mat-label>
+        <input matInput  formControlName="name">
+        <mat-error *ngIf="categoryForm.controls.name.errors?.required">Category Name is required</mat-error>
+        <mat-error *ngIf="categoryForm.controls.name.errors?.invalidDuplicate">The Category Name is duplicate</mat-error>
+      </mat-form-field>
+     
+      <div class="submit">
+        <button mat-raised-button color="primary">Submit</button>
+      </div>   
+  </form>
+  </mat-card>
+</div>
+
